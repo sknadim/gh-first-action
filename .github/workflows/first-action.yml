@@ -24,6 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 15
+  third-job:
+    needs: first-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Github Context
+        run: echo "{{toJSON(github)}}"
+          
        
         
     
