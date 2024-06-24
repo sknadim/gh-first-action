@@ -8,5 +8,21 @@ jobs:
         run: echo "Hello World"
       - name: Print goodbye
         run: echo "Good bye"
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+  seconds-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Lost Message
+        run: echo "Get Lost"
+      - name: Say Hi Message
+        run: echo "Hi, How are you"
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 15
+       
         
     
