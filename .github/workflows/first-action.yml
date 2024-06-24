@@ -11,7 +11,7 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 99
   seconds-job:
     needs: first-job
     runs-on: ubuntu-latest
